@@ -155,8 +155,8 @@ body {
 }
 
 .card-type2 {
-  width: 600px;
-  height: 800px;
+  width: 300px;
+  height: 500px;
   background: rgba(211, 211, 211, 0.199);
   position: absolute;
   transition: .3s ease-in-out;
@@ -206,7 +206,7 @@ body {
 }
 
 .main {
-  padding-top: 400px;
+  padding-top: 100px;
   display: grid;
   height: 50vmax;
   place-items: center;
