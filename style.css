@@ -194,8 +194,8 @@ section {
 }
 
 .card-type2 {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 500px;
   background: rgba(211, 211, 211, 0.199);
   position: absolute;
   transition: .3s ease-in-out;
@@ -245,7 +245,7 @@ section {
 }
 
 .main {
-  padding-top: 5px;
+  padding-top: 400px;
   display: grid;
   height: 50vmax;
   place-items: center;
