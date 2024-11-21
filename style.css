@@ -57,7 +57,7 @@ table {
   bottom: 0;
   z-index: 1;
   width: 100vw;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   
 }
 
@@ -133,12 +133,19 @@ body {
   
 }
 
-#about, #process,#projects, #contact {
+#about, #contact {
   padding: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 200px;
+  gap: 150px;
+}
+
+#projects, #process{
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 #carouselExampleCaptions {
@@ -181,7 +188,7 @@ body {
 }
 
 #about p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   width: 50%;
 }
 #joab {
