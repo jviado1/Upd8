@@ -167,7 +167,8 @@ body {
 
 #about p {
   font-size: 20px;
-  width: 500px;
+  line-height: 1.3;
+  width: 40vw;
 }
 #joab {
   width: 400px;
@@ -203,9 +204,9 @@ h4 {
   color: #ece948;
 }
 .card img {
-  width: 500;
   height: 400px;
   object-fit: cover;
+  border-radius: 10px;
 }
 .card .container{
   line-height: 1.5;
@@ -223,6 +224,7 @@ h4 {
 
 .container {
   padding: 2px 20px;
+  padding-bottom: 30px;
 }
 
 .main {
@@ -251,6 +253,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   margin: 1rem 0;
   position: relative;
   border-radius: 4px;
+}
+
+small {
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 768px){
@@ -328,13 +334,7 @@ textarea {
             0 1px 1px 0 rgba(0,0,0,0.09);
 }
 
-@media (max-width: 768px) {
-  .submit-btn {
-      width:100%;
-      float: none;
-      text-align:center;
-  }
-}
+
 
 input[type=checkbox] + label {
 color: #ccc;
@@ -358,14 +358,90 @@ footer {
   width: 100vw;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 786px) {
+  #about {
+    height: 100vh;
+  }
+  #about-content {
+    flex-direction:column;
+    align-items: center;
+    gap: 100px;
+  }
+  #joab {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #about p {
+    font-size: 16px;
+    line-height: 1.3;
+    width: 70vw;
+  }
+  #process {
+    height: fit-content;
+  }
+  #cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 300px;
+    height: 350px;
+  }
+  .card img {
+    height: 300px;
+  }
+  #contact {
+    height: fit-content;
+  }
+  .submit-btn {
+    width:100%;
+    float: none;
+    text-align:center;
+}
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler.custom-toggler {
+    background-color: #ece948;
+  }
+}
+
+@media (min-width: 1200px) {
+  
   #cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     
   }
+
+  #process {
+    height: 95vh;
+  }
   .card {
+    width: 400px;
+    height: 400px;
+    
+  }
+
+  .card img{
     width: 25vw
   }
   
+}
+
+@media (min-width: 2000px) {
+  .hero-buttons {top: 70%;}
+
+  #cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  #process {
+    height: 70vh;
+  }
 }
