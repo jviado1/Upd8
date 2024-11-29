@@ -80,7 +80,7 @@ body {
 .hero-image {
   
   background-image: url("image/streamline.png");
-  height: 70vh;
+  height: 100vh;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,14 +107,13 @@ body {
 }
 
 #about, #projects {
-  height: 70vh;
+  height: fit-content;
   color: white;
   background-image: url("image/board.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
 }
 
 
@@ -127,19 +126,8 @@ body {
 }
 
 #carouselExampleCaptions {
-  width: 40vw;
+  width: 50vw;
   align-self: center;
-  
-}
-
-.carousel-item:after {
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.6);
   
 }
 
@@ -181,7 +169,7 @@ section {
 
 #process {
   background-color: #ece948;
-  height: 70vh;
+  height: fit-content;
   padding: 70px;
 }
 
@@ -225,6 +213,7 @@ h4 {
 .container {
   padding: 2px 20px;
   padding-bottom: 30px;
+  height: fit-content;
 }
 
 .main {
@@ -235,7 +224,7 @@ h4 {
 }
 
 #contact {
-  height: 70vh;
+  height: fit-content;
   background-color: #ece948;
 }
 
@@ -360,7 +349,7 @@ footer {
 
 @media (max-width: 786px) {
   #about {
-    height: 100vh;
+    height: fit-content;
   }
   #about-content {
     flex-direction:column;
@@ -384,6 +373,7 @@ footer {
   #cards {
     display: flex;
     flex-direction: column;
+    height: fit-content;
   }
   .card {
     width: 300px;
@@ -413,11 +403,11 @@ footer {
   #cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    height: fit-content;
   }
 
   #process {
-    height: 95vh;
+    height: fit-content;
   }
   .card {
     width: 400px;
@@ -439,9 +429,10 @@ footer {
     justify-content: center;
     align-items: center;
     margin: auto;
+    height: fit-content;
   }
 
   #process {
-    height: 70vh;
+    height: fit-content;
   }
 }
