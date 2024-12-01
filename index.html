@@ -23,41 +23,45 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img id="logo" src="image/upd8_logo.png" alt="Bootstrap" width="30" height="24">
-                  </a>
-              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">PROCESS</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      PROJECTS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">NASE</a></li>
-                      <li><a class="dropdown-item" href="#">JOAB</a></li>
-                      <li><a class="dropdown-item" href="#">Kusina Ni Ana</a></li>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#process">PROCESS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PROJECTS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://jviado1.github.io/NASE-Space/">NASE</a></li>
+                                <li><a class="dropdown-item" href="https://jviado1.github.io/JOAB-Clothing/">JOAB</a></li>
+                                <li><a class="dropdown-item" href="https://jviado1.github.io/KusinaNiAna/">Kusina Ni Ana</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
+        <h1>delete</h1>
         <div class="hero-image">
             <div class="hero-buttons">
-                <button>What I Do</button>
-                <button>Contact Me</button>
+                <a href="#about">What I Do</a>
+                <a href="#contact">Contact Me</a>
             </div>
         </div>
         <section id="about">
@@ -83,7 +87,7 @@
                 <div class="card">
                     <img src="image/shake.jpeg" alt="two people shaking hands" style="width:100%">
                     <div class="container">
-                        <h4><b>1. Research</b></h4>
+                        <h3><b>1. Research</b></h3>
                         <p>Under strict deadines, I make sure to fully understand my client's needs and goals for the
                             website.</p>
                     </div>
@@ -92,7 +96,7 @@
                     <img src="image/wireframe.jpeg" alt="a potted plant beside website mockup papers on a wooden table"
                         style="width:100%">
                     <div class="container">
-                        <h4><b>2. Design & Wireframe</b></h4>
+                        <h3><b>2. Design & Wireframe</b></h3>
                         <p>My prorotyping stage entails gathering unique designs that mirror my client's brand identity.
                         </p>
                     </div>
@@ -101,7 +105,7 @@
                     <img src="image/debug.jpeg" alt="a hand holding a dart, pointing at code on a monitor"
                         style="width:100%">
                     <div class="container">
-                        <h4><b>3. Development</b></h4>
+                        <h3><b>3. Development</b></h3>
                         <p>I take pride in my rigorous code testing and debugging to refine website security and
                             performance.</p>
                     </div>
@@ -110,72 +114,91 @@
                     <img src="image/maintenance.jpeg" alt="a miniature orange cone and a yellow hardhat on a laptop"
                         style="width:100%">
                     <div class="container">
-                        <h4><b>4. Launch & Maintenance</b></h4>
+                        <h3><b>4. Launch & Maintenance</b></h3>
                         <p>I deploy websites with ongoing support to keep my products Upd8-ed.</p>
                     </div>
                 </div>
             </div>
         </section>
-        </section>
+        
         <section id="projects">
             <h2>PROJECTS</h2>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <div id="project-contents">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/joab_sc.png" class="d-block w-100" alt="JOAB">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/nase_sc.png" class="d-block w-100" alt="NASE">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/kna_sc.png" class="d-block w-100" alt="KNA">
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="image/joab_sc.png" class="d-block w-100" alt="...">
+                <div id="project-description">
+                    <div class="desc">
+                        <h3>JOAB</h3>
+                        <p>Joab is a fictional menʼs online clothing store focusing on high-quality and budget-friendly garments.</p>
+                        <a href="https://jviado1.github.io/JOAB-Clothing/">JOAB Garments</a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="image/nase_sc.png" class="d-block w-100" alt="...">
+                    <div class="desc">
+                        <h3>NASE</h3>
+                        <p>National Aeronautics and Space Exploration (NASE) is a fictional space program that lets customers take trips to various popular planets, where they can choose among four legendary space crafts to fly with.</p>
+                        <a href="https://jviado1.github.io/NASE-Space/">NASE - National Aeronautics and Space Exploration</a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="image/kna_sc.png" class="d-block w-100" alt="...">
+                    <div class="desc">
+                        <h3>Kusina Ni Ana</h3>
+                        <p>Kusina ni Ana is a local Filipino-cuisine catering business run by Jacksonville local, Ana Caiga, where she aims to popularize traditional Filipino dishes by catering to business, parties, weddings, and other events.</p>
+                        <a href="https://jviado1.github.io/KusinaNiAna/">Kusina Ni Ana</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div id="project-description">
-                
             </div>
         </section>
         <section id="contact">
             <h2>CONTACT ME</h2>
             <div class="container">
                 <div class="row">
-                    <h4 style="text-align:center">I'd love to hear from you!</h4>
+                    <h3 style="text-align:center">I'd love to hear from you!</h3>
                 </div>
                 <div class="row input-container">
                     <div class="col-xs-12">
                         <div class="styled-input wide">
-                            <input type="text" required />
+                            <input type="text" required>
                             <label>Name</label>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="styled-input">
-                            <input type="text" required />
+                            <input type="text" required>
                             <label>Email</label>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="styled-input" style="float:right;">
-                            <input type="text" required />
+                            <input type="text" required>
                             <label>Phone Number</label>
                         </div>
                     </div>
@@ -195,6 +218,7 @@
     <footer>
         <small>&copy; 2024 JOAB VIADO / UPD8</small>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

@@ -77,8 +77,13 @@ body {
   color: #1a1a1a;
 }
 
-.hero-image {
+button.navbar-toggler.custom-toggler {
+  color: #ece948;
+  background-color: #ece948;
   
+}
+
+.hero-image {
   background-image: url("image/streamline.png");
   height: 100vh;
   border: none;
@@ -88,6 +93,20 @@ body {
   position: relative;
 }
 
+.hero-buttons a {
+  text-decoration: none;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.hero-buttons a:hover {
+  background-color: white;
+  color: #1a1a1a;
+  transition: 0.3s;
+}
 
 .hero-buttons {
   text-align: center;
@@ -95,14 +114,6 @@ body {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-buttons > button {
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-  background-color: #1a1a1a;
   color: white;
 }
 
@@ -127,21 +138,48 @@ body {
 
 #carouselExampleCaptions {
   width: 50vw;
-  align-self: center;
-  
 }
 
-.carousel-caption {
-  z-index: 1;
-  text-align: start;
+.carousel img{
+  border-radius: 10px;
 }
 
-.carousel-caption h5{
-  font-size: 1.5rem;
-  padding-bottom: 10px;
+.carousel-item .carousel-caption {
+  display: none;
+}
+
+#project-contents {
+  display: flex;
+}
+
+#project-description {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+
+.desc {
+  padding-bottom: 20px;
+}
+
+.desc h3 {
+  font-size: 2rem;
   color: #ece948;
 }
 
+.desc p, .desc a {
+  padding-top: 10px;
+  line-height: 1.3;
+}
+
+.desc a {
+  text-decoration: underline;
+  font-style: italic;
+  color: #ece948;
+  font-size: 0.8rem;
+}
 #about-content {
   display: flex;
   flex-direction: row-reverse;
@@ -160,7 +198,8 @@ body {
 }
 #joab {
   width: 400px;
-  height: 400px;  
+  height: 400px;
+  border-radius: 10px; 
 }
 
 section {
@@ -172,8 +211,8 @@ section {
   height: fit-content;
   padding: 70px;
 }
-
-h4 {
+h1 {display: none;}
+h3 {
   font-size: 1.2rem;
 }
 
@@ -194,7 +233,7 @@ h4 {
 .card img {
   height: 400px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 .card .container{
   line-height: 1.5;
@@ -205,7 +244,6 @@ h4 {
   gap: 50px;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -348,6 +386,28 @@ footer {
 }
 
 @media (max-width: 786px) {
+  h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .hero-image {
+    background-image: url("image/streamline-mobile.png");
+    height: 100vh;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 55%;
+  }
+  .hero-buttons a {
+    padding: 8px;
+  }
   #about {
     height: fit-content;
   }
@@ -389,13 +449,27 @@ footer {
     width:100%;
     float: none;
     text-align:center;
-}
+  }
+  
 }
 
+@media (max-width: 992px) {
+  #project-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  #carouselExampleCaptions {
+    width: 80vw;
+  }
+  #project-description {
+    width: 80vw;
+  }
+}
 @media (min-width: 992px) {
   .navbar-toggler.custom-toggler {
     background-color: #ece948;
   }
+
 }
 
 @media (min-width: 1200px) {
