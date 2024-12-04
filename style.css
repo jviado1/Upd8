@@ -67,6 +67,9 @@ body {
   height: auto;
 }
 
+a.nav-link:hover {
+  color: white;
+}
 .navbar {
   background-color: #2d2d2d;
 }
@@ -127,7 +130,10 @@ button.navbar-toggler.custom-toggler {
   position: relative;
 }
 
-
+.desc a:hover {
+  color: white;
+  transition: 0.3s;
+}
 
 #about, #contact, #projects, #process{
   padding: 70px;
@@ -451,6 +457,18 @@ footer {
     text-align:center;
   }
   
+}
+
+@media (min-width: 786px) {
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 40vw;
+    
+  }
 }
 
 @media (max-width: 992px) {
